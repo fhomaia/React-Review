@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.dark-green-background {
+  background-color: #0B672F;
+}
+
+.dark-green-color {
+  color: #0B672F;
+}
+
+.light-green-background {
+  background-color: #71B12C;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fs-3 {
+  font-size: 16px;
+}
+
+.first-div {
+  background-position-x: center;
+  clip-path: polygon(0% 0%, 0% 75%, 100% 100%, 100% 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  justify-content: end;
+  background-size: cover;
+  height: 890px;
+  width: 100%;
+  position: relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.first-div::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(transparent, #0B672F);
+  width: 100%;
+  height: 50%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.second-div {
+  background-image: url('./assets/triangle-pattern.png');
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0%, 100% 43%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 41.6rem;
+  padding: 12rem 1rem 5rem 1rem
+}
+
+@media screen and (max-width: 991px) {
+  .second-div {
+    clip-path: polygon(0% 0%, 100% 24%, 100% 100%, 0% 100%);
+    padding: 21rem 1rem 5rem 1rem
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
