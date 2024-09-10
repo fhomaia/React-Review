@@ -10,14 +10,15 @@
   background-color: #71B12C;
 }
 
+.light-green-color {
+  color: #71B12C;
+}
+
 body {
   margin: 0;
   color: white;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.fs-3 {
-  font-size: 16px;
 }
 
 .first-div {
@@ -34,6 +35,30 @@ body {
   position: relative;
 }
 
+.ecotreinamento::after {
+  content: '';
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-70%);
+  background-color: #0B672F;
+  clip-path: polygon(0% 0, 100% 30%, 100% 100%, 0 70%, 0 0);
+}
+
+.ecotreinamento::before {
+  content: '';
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(70%);
+  background-color: #0B672F;
+  clip-path: polygon(0% 0, 100% 30%, 100% 100%, 0 70%, 0 0);
+}
+
 .first-div::before {
   content: '';
   position: absolute;
@@ -45,17 +70,18 @@ body {
 }
 
 .second-div {
-  background-image: url('./assets/triangle-pattern.png');
+  /* background-image: url('./assets/triangle-pattern.svg'); */
   background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 100% 43%, 100% 100%, 0% 100%);
-  position: absolute;
-  top: 41.6rem;
-  padding: 12rem 1rem 5rem 1rem
+  background-size: contain;
+  clip-path: polygon(0% 0%, 100% 35%, 100% 100%, 0% 100%);
+  position: relative;
+  bottom: 14.6rem;
+  padding: 12rem 1rem 5rem 1rem;
 }
 
 @media screen and (max-width: 991px) {
   .second-div {
-    clip-path: polygon(0% 0%, 100% 24%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 23%, 100% 100%, 0% 100%);
     padding: 21rem 1rem 5rem 1rem
   }
 }
