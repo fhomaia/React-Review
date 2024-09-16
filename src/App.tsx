@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/header';
+import triangles from './assets/triangle-pattern.svg'
 
 function App() {
   let imagePath = './src/assets/banner1.svg'
@@ -17,7 +18,7 @@ function App() {
       </div>
       <div className='w-100 light-green-background second-div d-flex justify-content-lg-center align-items-lg-end p-bottom-2 flex-column flex-lg-row'>
         <div className="d-flex">
-          <img src='./src/assets/triangle-pattern.svg' style={{ maxHeight: '73%', left: '5rem', bottom: '5rem' }} className="position-absolute"></img>
+          <img src={triangles} style={{ maxHeight: '73%', left: '5rem', bottom: '5rem' }} className="position-absolute"></img>
           <iframe src="https://www.youtube.com/embed/et9ueYUt9Po" className='rounded w-100 z-1' style={{ aspectRatio: '16/9' }} height="300">
           </iframe>
         </div>
