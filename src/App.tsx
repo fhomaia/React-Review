@@ -1,9 +1,11 @@
 import './App.css';
 import Header from './components/header';
-import triangles from './assets/triangle-pattern.svg'
+import banner from './assets/banner1.svg';
+import triangles from './assets/triangle-pattern.svg';
+import thirdSection from './assets/third-section.svg';
 
 function App() {
-  let imagePath = './src/assets/banner1.svg'
+  let imagePath = banner
   let banners = [1, 2, 3]
   return (
     <div>
@@ -30,7 +32,7 @@ function App() {
         </div>
       </div>
       <div className='w-100 position-relative' style={{ bottom: '15rem' }}>
-        <img src="./src/assets/third-section.svg" className='w-100'></img>
+        <img src={thirdSection} className='w-100'></img>
         <div className="position-absolute" style={{ bottom: '4.5%', left: '20%' }}>
           <div className='ecotreinamento h-100 d-flex flex-column justify-content-center p-4 z-1 dark-green-background position-relative bottom-0'>
             <h2 className='light-green-color fw-bolder bg-white' style={{ width: 'fit-content' }}>ECOTREINAMENTO</h2>
