@@ -8,7 +8,7 @@ function App() {
   let imagePath = banner
   let banners = [1, 2, 3]
   return (
-    <div>
+    <div style={{height: 0}}>
       <Header />
       <div className="first-div pb-3" style={{ backgroundImage: `url('${imagePath}')` }}>
         <div style={{ marginBottom: '9.5rem' }} className='z-1 col-8 col-lg-6'>
