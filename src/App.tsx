@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/header';
 import banner from './assets/banner1.svg';
 import triangles from './assets/triangle-pattern.svg';
-import thirdSection from './assets/third-section.svg';
+import thirdSection from './assets/thirdSection.svg';
 
 function App() {
   let imagePath = banner
@@ -32,8 +32,8 @@ function App() {
         </div>
       </div>
       <div className='w-100 position-relative' style={{ bottom: '15rem' }}>
-        <img src={thirdSection} className='w-100'></img>
-        <div className="position-absolute" style={{ bottom: '4.5%', left: '20%' }}>
+        <img src={thirdSection} className='w-100' ></img>
+        <div className="position-absolute" style={{ top: '33%', right: '27%'}}>
           <div className='ecotreinamento h-100 d-flex flex-column justify-content-center p-4 z-1 dark-green-background position-relative bottom-0'>
             <h2 className='light-green-color fw-bolder bg-white' style={{ width: 'fit-content' }}>ECOTREINAMENTO</h2>
             <p className='fw-bold light-green-color'>Pioneirismo e excelência em treinamentos corporativos</p>
